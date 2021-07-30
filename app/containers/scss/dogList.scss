@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+$font1: 'Montserrat',sans-serif;
+
+* {
+  box-sizing: border-box;
+  font-family: $font1;
+
+  }
+  .dog-container {
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom:24px;
+    
+      h1 {
+        font-weight: 700;
+        color: #000;
+        margin:0 auto;
+      }
+    }
+    .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+  }
+
+.dog-pictures {
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr) );
+  grid-gap:24px;
+  align-items: flex-start;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  img {
+    max-width:250px;
+    width: 100%;
+  }
+}

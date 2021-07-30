@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+$font1: 'Montserrat',sans-serif;
+$color1: #ec6302;
+$color2 : #2e8bc0;
+button {
+  align-self: center;
+  margin:12px 8px;
+  padding:12px 24px;
+  border-radius:4px;
+  font-family:$font1;
+  border:0;
+  background-color:$color1;
+  color:#fff;
+  font-weight:700;
+  transition:225ms;
+  border:2px solid $color1;;
+  &:hover,&:focus,&.active,.btn_highlighted {
+      background-color:#fff;
+      color:$color1;
+  }
+}
